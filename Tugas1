@@ -1,0 +1,91 @@
+No 1 (Integer)
+public class Integer1 {
+    public static void soal1(String[] args) {
+        // 1. Deklarasi variabel bertipe integer bernama StrukturBaris
+        int StrukturBaris;
+
+        // 2. Inisialisasi (memberi nilai awal)
+        StrukturBaris = 5;
+
+        // 3. Menampilkan nilai variabel
+        System.out.println("Nilai StrukturBaris = " + StrukturBaris);
+
+        // Deklarasi + inisialisasi sekaligus (bentuk singkat):
+        // int StrukturBaris = 5;
+    }
+}
+No 2 (String)
+public class String2 {
+    public static void main(String[] args) {
+        // 1. Deklarasi variabel bertipe String bernama KataBaru
+        String KataBaru;
+
+        // 2. Inisialisasi dengan nama awal
+        KataBaru = "fadhila";
+
+        // 3. Menampilkan nilai variabel
+        System.out.println("Nilai KataBaru = " + KataBaru);
+
+        // Bentuk singkat (deklarasi + inisialisasi sekaligus):
+        // String KataBaru = "fadhila";
+    }
+}
+No 3 (Array 1 dimensi, Soal No 3)
+public class Array13 {
+    public static void main(String[] args) {
+        // Deklarasi + inisialisasi array integer satu dimensi
+        // NIM 058261092 -> 2 digit awal = 05, 2 digit akhir = 92
+        // Catatan: ditulis 5 (bukan 05), karena 05 di Java dianggap bilangan oktal
+        int[] empatAngka = {5, 10, 20, 92};
+
+        // Menampilkan isi array dengan perulangan
+        for (int i = 0; i < empatAngka.length; i++) {
+            System.out.println("empatAngka[" + i + "] = " + empatAngka[i]);
+        }
+    }
+}
+No 4 (Array 2 Dimensi Soal No 4)
+public class Array24 {
+    public static void main(String[] args) {
+        // Deklarasi + inisialisasi array 2 dimensi bertipe String (3 baris x 3 kolom)
+        // NIM 058261092 -> 2 digit awal = 05, 2 digit akhir = 92
+        String[][] Angka = {
+            {"05", "3", "5"},
+            {"14", "19", "20"},
+            {"22", "27", "92"}
+        };
+
+        // Menampilkan isi array dengan perulangan bersarang
+        for (int baris = 0; baris < Angka.length; baris++) {
+            for (int kolom = 0; kolom < Angka[baris].length; kolom++) {
+                System.out.print(Angka[baris][kolom] + "\t");
+            }
+            System.out.println(); // pindah ke baris berikutnya
+        }
+    }
+}
+No 5 (Deklarasi Linked List)
+import java.util.LinkedList;
+
+public class DeklarasiLinkedList5 {
+    public static void main(String[] args) {
+        // Deklarasi linked list berisi Integer bernama listAngka
+        // NIM 058261092 -> 2 digit awal = 05, 2 digit akhir = 92
+        LinkedList<Integer> listAngka = new LinkedList<>();
+
+        // Menambahkan elemen satu per satu (urut dari depan ke belakang)
+        listAngka.add(5);   // 05 ditulis 5 (05 dianggap oktal di Java)
+        listAngka.add(19);
+        listAngka.add(44);
+        listAngka.add(60);
+        listAngka.add(92);
+
+        // Menampilkan seluruh isi list
+        System.out.println("listAngka = " + listAngka);
+
+        // Menampilkan tiap elemen beserta posisinya
+        for (int i = 0; i < listAngka.size(); i++) {
+            System.out.println("Elemen ke-" + i + " = " + listAngka.get(i));
+        }
+    }
+}
